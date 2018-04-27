@@ -106,3 +106,32 @@ nav.navchildren a {
 nav.navchildren  a:hover {
   text-decoration: underline;
 }
+
+#tag-cloud a {
+  display: inline-block;
+  border: 1px solid rgba(255,255,255,.8);
+  border-radius: 999em;
+  padding: 5px 10px;
+  color: #fff;
+  line-height: 24px;
+  font-size: 16px;
+  text-decoration: none;margin: 0 1px;
+  margin-bottom: 8px;
+}
+#tag-cloud a:hover {
+  background-color: #0085a1!important;
+}
+.heading-head {
+  padding: 60px 0;
+  max-width: 710px;
+  text-align: left;
+  margin: auto;
+}
+.heading-head h1{
+  font-size: 5.0rem!important;
+  margin-bottom: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 20px;
+  text-shadow: 1px 1px 8px #444;
+}
