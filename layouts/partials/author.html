@@ -4,11 +4,11 @@
 {{$authorbio := or .Params.authorbio .Site.Params.authorbio }}
 {{$authorlocation := or .Params.authorlocation .Site.Params.authorlocation }}
 {{$authorwebsite := or .Params.authorwebsite .Site.Params.authorwebsite }}
-{{$authoravatar := or .Params.authoravatar .Site.Params.logo }}
+{{$authoravatar := or .Site.Params.authoravatar .Site.Params.logo }}
 
 {{with $authoravatar}}
 <figure class="author-image">
-    <a class="img" href="{{$.Site.BaseURL}}" style="background-image: url({{. | relURL}})"><span class="hidden">{{$authorname}}'s Picture</span></a>
+    <a class="img" href="{{$.Site.BaseURL}}" style="background-image: url({{$authoravatar | relURL}})"><span class="hidden">{{$authorname}}'s Picture</span></a>
 </figure>
 {{end}}
 
