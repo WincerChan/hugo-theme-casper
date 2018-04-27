@@ -4,9 +4,9 @@
     </header>
     <section class="post-excerpt">
         {{if .Params.excerpt }}
-            <p>{{ .Params.excerpt }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
+            <p>{{ .Description }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
         {{else}}
-            <p>{{ .Summary }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
+            <p>{{ .Description }} <a class="read-more" href="{{.RelPermalink}}">&raquo;</a></p>
         {{end}}
     </section>
     <footer class="post-meta">
@@ -14,24 +14,16 @@
 
         {{ if or .Params.author .Site.Params.author}}
             {{$authorname := or .Params.author .Site.Params.author }}
-            {{$authoravatar := or .Params.authoravatar .Site.Params.logo }}
+            {{$authoravatar := .Site.Params.authoravatar }}
 
             {{with $authoravatar}}
-            <img class="author-thumb" src="{{ $authoravatar| relURL  }}" alt="Author image" nopin="nopin" />
+            <img class="author-thumb" src="{{ $authoravatar  }}" alt="Author image" nopin="nopin" />
             {{end}}
-            
+            Posted by
             {{with $authorname}}
-            {{$authorname}}
+             {{$authorname}}
             {{end}}     
         {{end}}
-
-        {{if .Params.tags }}on
-            {{ range $index, $tag := .Params.tags }}
-                <a href="{{$.Site.BaseURL}}/tags/{{ $tag | urlize }}/">#{{ $tag }}</a>,
-            {{ end }}
-        {{end}}
-        <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-            {{ .Date.Format "2 Jan 2006" }}
-        </time>
+        {{ .Date.Format "2 Jan 2006" }}
     </footer>
 </article>
