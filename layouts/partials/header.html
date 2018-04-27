@@ -48,7 +48,6 @@
 
     <link rel="stylesheet" type="text/css" href="{{ "css/screen.css" | relURL}}" />
     <link rel="stylesheet" type="text/css" href="{{ "css/nav.css" | relURL}}" />
-
     {{ range .Site.Params.customCSS }}
     <link rel="stylesheet" href="{{ . | relURL }}">
     {{ end }}
@@ -100,6 +99,7 @@
     {{ if .Site.Params.customHeaderPartial }}
         {{ partial .Site.Params.customHeaderPartial . }}
     {{ end }}
+    <script type="text/javascript" src="{{"js/jquery.js" | relURL}}"></script>
 </head>
 <body class="nav-closed">
 
