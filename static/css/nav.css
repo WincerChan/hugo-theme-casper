@@ -128,7 +128,7 @@ nav.navchildren  a:hover {
   margin: auto;
 }
 .heading-head h1{
-  font-size: 5.0rem!important;
+  font-size: 5.0rem;
   margin-bottom: 24px;
   font-weight: 700;
   color: #fff;
@@ -137,4 +137,17 @@ nav.navchildren  a:hover {
 }
 .head-inner {
   padding: 0 10px;
+}
+.title-inner {
+  padding: 0 10px;
+}
+.special {
+  font-size: 7rem!important;
+  text-align: center;
+}
+@media only screen and (max-width: 500px){
+  .special {
+    font-size: 5rem!important;
+    text-align: center;
+  }
 }

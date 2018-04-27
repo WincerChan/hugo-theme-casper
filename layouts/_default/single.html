@@ -27,9 +27,13 @@
           <span class="post-tag small"><a href="{{$.Site.BaseURL}}/tags/{{ . | urlize }}/">{{ . }}</a></span>
          {{ end }}
     </section>
-    <h1 class="post-title">{{.Title}}</h1>
+    {{ if eq .Section "post" }}
+    <h1 class="post-title title-inner">{{.Title}}</h1>
+    {{else}}
+    <h1 class="post-title title-inner special">{{.Title}}</h1>
+    {{end}}
     {{ if eq .Section "post"}}
-      <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+      <time class="post-date title-inner" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
         Posted on {{ .Date.Format "Jan 2, 2006" }}
       </time>
     {{end}}
