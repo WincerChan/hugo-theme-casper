@@ -1772,7 +1772,7 @@ body:not(.post-template) .post-title {
         margin-bottom: 2rem;
         margin-left: 16px;
         margin-right: 16px;
-        padding-bottom: 2rem;
+        /* padding-bottom: 2rem; */
         line-height: 1.65em;
     }
 
@@ -1842,7 +1842,7 @@ body:not(.post-template) .post-title {
     }
 
     body:not(.post-template) .post-title {
-        font-size: 3.0rem!important;
+        font-size: 2.6rem!important;
         /* padding: 0 10px; */
     }
 
@@ -1863,9 +1863,9 @@ body:not(.post-template) .post-title {
     }
 
     .post-meta {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         margin-top: 1rem;
-        padding: 0 10px;
+        /* padding: 0 10px; */
     }
 
     .post-footer {

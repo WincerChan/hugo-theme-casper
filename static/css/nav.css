@@ -135,3 +135,6 @@ nav.navchildren  a:hover {
   margin-top: 20px;
   text-shadow: 1px 1px 8px #444;
 }
+.head-inner {
+  padding: 0 10px;
+}
