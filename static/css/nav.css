@@ -150,4 +150,19 @@ nav.navchildren  a:hover {
     font-size: 5rem!important;
     text-align: center;
   }
+  .title-inner {
+    /* padding: 0; */
+  }
+  .head-inner {
+    /* padding: 0; */
+  }
+  .heading-head {
+    /* padding: 0 10px; */
+  }
+}
+
+.copyright {
+  border-left: #F44336 0.4em solid;
+  width: 100%;
+  float: inherit!important;
 }
