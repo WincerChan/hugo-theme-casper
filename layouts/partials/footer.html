@@ -6,8 +6,7 @@
     </footer>
     </div>
     {{ if .Site.Params.Vendors }}
-    <script type="text/javascript" src="{{ .Site.Params.Vendors }}/main.min.js"></script>
-    <script type="text/javascript" src="{{ .Site.Params.Vendors }}/main.min.css"></script>
+    <script type="text/javascript" src="{{ .Site.Params.Vendors }}/dist/main.min.js"></script>
     {{else}}
     <script type="text/javascript" src="{{"js/jquery.fitvids.js" | relURL}}"></script>
     <script type="text/javascript" src="{{"js/index.js" | relURL}}"></script>
