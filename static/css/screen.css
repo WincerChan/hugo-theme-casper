@@ -149,11 +149,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* Import the font file with the icons in it */
 @font-face {
   font-family: 'genericons';
-  src: url('../fonts/Genericons/Genericons.eot');
-  src: url('../fonts/Genericons/Genericons.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Genericons/Genericons.woff') format('woff'),
-       url('../fonts/Genericons/Genericons.ttf') format('truetype'),
-       url('../fonts/Genericons/Genericons.svg#entypo') format('svg');
+  src: url('https://cdn.jsdelivr.net/gh/wincerchan/hugo-theme-casper@0.1.1/static/fonts/Genericons/Genericons.eot');
+  src: url('https://cdn.jsdelivr.net/gh/wincerchan/hugo-theme-casper@0.1.1/static/fonts/Genericons/Genericons.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/gh/wincerchan/hugo-theme-casper@0.1.1/static/fonts/Genericons/Genericons.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/gh/wincerchan/hugo-theme-casper@0.1.1/static/fonts/Genericons/Genericons.ttf') format('truetype'),
+       url('https://cdn.jsdelivr.net/gh/wincerchan/hugo-theme-casper@0.1.1/static/fonts/Genericons/Genericons.svg#entypo') format('svg');
   font-weight: normal; font-style: normal;
 }
 
