@@ -54,7 +54,7 @@
     <script>
       if (typeof window.lsLoadCSSMaxNums === "undefined") window.lsLoadCSSMaxNums = 0;
       window.lsLoadCSSMaxNums++;
-      lsloader.load("main_css", "{{ .Site.Params.Vendors }}/dist/main.min.css", function() {
+      lsloader.load("main_css", "https://note.itswincer.com/css/main.min.css", function() {
         if (typeof window.lsLoadCSSMaxNums === "undefined") window.lsLoadCSSMaxNums = 0;
         window.lsLoadCSSMaxNums++;
         if (window.lsLoadCSSMaxNums == window.lsLoadCSSMaxNums) document.documentElement.style.display = "";
