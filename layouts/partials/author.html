@@ -8,7 +8,7 @@
 
 {{with $authoravatar}}
 <figure class="author-image">
-    <a class="img" href="{{$.Site.BaseURL}}" style="background-image: url({{$authoravatar | relURL}})"><span class="hidden">{{$authorname}}'s Picture</span></a>
+    <a class="img lazyload" href="{{$.Site.BaseURL}}" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=')" data-src="{{$authoravatar | relURL}}"><span class="hidden">{{$authorname}}'s Picture</span></a>
 </figure>
 {{end}}
 

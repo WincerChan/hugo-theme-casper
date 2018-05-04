@@ -17,7 +17,7 @@
             {{$authoravatar := .Site.Params.authoravatar }}
 
             {{with $authoravatar}}
-            <img class="author-thumb" src="{{ $authoravatar  }}" alt="Author image" nopin="nopin" />
+            <img class="author-thumb lazyload" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs=" data-src="{{ $authoravatar  }}" alt="Author image" nopin="nopin" />
             {{end}}
             Posted by
             {{with $authorname}}
