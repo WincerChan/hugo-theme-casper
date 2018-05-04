@@ -24,8 +24,7 @@
   <div class="heading-head">
     <section class="post-meta head-inner">
          {{ range .Params.tags }}
-         {{ printf . }}
-          <span class="post-tag small"><a href="{{$.Site.BaseURL}}/tags/{{ . }}/">{{ . }}</a></span>
+          <span class="post-tag small"><a href="{{$.Site.BaseURL}}/tags/{{ . | urlize }}/">{{ . }}</a></span>
          {{ end }}
     </section>
     {{ if eq .Section "post" }}

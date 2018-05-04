@@ -33,7 +33,7 @@
                 {{ $r := (sub 187 (mul 16 $currentTagCount)) }}
                 {{ $g := (sub 187 (mul 8 $currentTagCount)) }}
                 {{ $b := (sub 238 (mul 11 $currentTagCount)) }}
-				<a href="/tags/{{ $name }}" style="background-color:rgb({{$r}}, {{$g}}, {{$b}});}">{{ $name }}</a>
+				<a href="/tags/{{ $name }}/" style="background-color:rgb({{$r}}, {{$g}}, {{$b}});}">{{ $name }}</a>
 			{{ end }}
 		</div>
 	{{ end }}
